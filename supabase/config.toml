@@ -1,0 +1,7 @@
+# Funções públicas: o navegador do visitante e o Mercado Pago chamam sem login.
+# A segurança fica dentro delas (validação de dados, preço lido do banco, assinatura do webhook).
+[functions.criar-assinatura]
+verify_jwt = false
+
+[functions.mercadopago-webhook]
+verify_jwt = false
